@@ -1,0 +1,46 @@
+.\" Man page for sysopctl
+.TH SYSOPCTL 1 "October 10, 2024" "sysopctl v0.1.0"
+.SH NAME
+sysopctl \- A system management tool for managing services, processes, and system health.
+.SH SYNOPSIS
+.B sysopctl
+[\-\-help] [\-\-version] [command]
+.SH DESCRIPTION
+sysopctl is a tool designed to manage system services and processes, monitor system health, and perform backups.
+.PP
+The following commands are available:
+.TP
+.B service list
+List all active services.
+.TP
+.B system load
+Display the current system load averages.
+.TP
+.B disk usage
+Show disk usage statistics by partition.
+.TP
+.B process monitor
+Monitor real-time system processes.
+.TP
+.B logs analyze
+Summarize recent critical log entries.
+.TP
+.B backup <path>
+Backup system files to the specified path.
+.SH OPTIONS
+.TP
+.B \-\-help
+Display help information about the command.
+.TP
+.B \-\-version
+Show the version of sysopctl.
+.SH EXAMPLES
+.TP
+sysopctl --help
+Display help information.
+.TP
+sysopctl service list
+List all currently running services.
+.SH AUTHOR
+Written by Abhishek.
+
